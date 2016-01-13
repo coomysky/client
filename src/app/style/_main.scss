@@ -1,0 +1,221 @@
+.gdc-main-body{
+  position:relative;
+  top:-50px;
+}
+
+.gdc-main{
+    overflow:hidden;
+    background: #817167;
+  &__row{
+    width: 90%;
+    margin-left: 10%;
+
+    &.-slider-text{
+      background: rgba(0, 0, 0, 0.5);
+      color:#fff;
+    }
+    &.-content{
+     padding:20px;
+    }
+    &.-tabs-content{
+      background: #fff;
+    }
+  }
+  &__header{
+    background: #E3DED8;
+    position: relative;
+    height: 40px;
+    padding: 10px;
+    color:#817167;
+  }
+   &__tabs{
+     background: #A4D7BA;
+     position: absolute;
+     right: 0;
+     top: 0;
+
+    &>li{
+      margin-left: -4px;
+      height: 40px;
+      line-height: 40px;
+      padding:0 20px;
+      &:hover{
+        background: #338456;
+        &>a{
+          color:#fff;
+          text-decoration: none;
+        }
+      }
+    }
+    &>li>a{
+      color:#3B865B;
+    }
+    &>li.active{
+       background: #338456;
+       &>a{
+         color:#fff;
+       }
+       &:after{
+        content:'';
+        display: block;
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: #338456 transparent transparent transparent;
+        position: relative;
+        z-index: 1;
+        top:0;
+       }
+    }
+  }
+}
+
+.gdc-certificate{
+  &__title{
+    background:#33844E;
+    height:100px;
+    padding:15px;
+    margin-left:-20px;
+    position:relative;
+    -webkit-box-shadow: 20px 7px 24px -12px rgba(0,0,0,0.21);
+    -moz-box-shadow: 20px 7px 24px -12px rgba(0,0,0,0.21);
+    box-shadow: 20px 7px 24px -12px rgba(0,0,0,0.21);
+    &>img{
+      height: 70px;
+      margin: 0 auto;
+    }
+    &:before{
+      content:'';
+      display:block;
+      height:100%;
+      width:200px;
+      position:absolute;
+      left:-200px;
+      background:#33844E;
+      top:0;
+    }
+  }
+  &__item{
+    border:1px #F80 solid;
+    height:100px;
+    margin-bottom:10px;
+    margin-right:5px;
+    cursor: pointer;
+    -webkit-box-shadow: 20px 7px 24px -12px rgba(0,0,0,0.21);
+    -moz-box-shadow: 20px 7px 24px -12px rgba(0,0,0,0.21);
+    box-shadow: 20px 7px 24px -12px rgba(0,0,0,0.21);
+    &-type{
+      padding:15px;
+      display:inline-block;
+      background:#F80;
+      height:100%;
+      line-height:100px;
+      &>img{
+        height: 45px;
+        margin: 0 auto;
+      }
+
+    }
+    &-title{
+      font-weight:bolder;
+      color:#fff;
+      margin:8px 0 0 0;
+    }
+    &-text{
+      display:inline-block;
+      color:#F80;
+      padding:15px 10px;
+      height:100%;
+      &>h6{
+        padding:0;
+      }
+      &>img{
+        height:30px;
+        margin:0px auto;
+        margin-bottom:0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $pad) {
+  .gdc-main{
+    background:rgba(129, 113, 103, 0.32);
+    &__row{
+      width:100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile+1) and (max-width: $pad) {
+  .gdc-certificate{
+    &__title{
+      padding:30px 30px;
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  .gdc-certificate{
+    &__title{
+      padding:20px 10px;
+      margin-left:-20px;
+      margin-right:-20px;
+    }
+    &__item{
+      &-text{
+        padding:0px;
+        &>h6{
+          padding:0;
+          margin:0;
+          margin-top:8px;
+        }
+        &>img{
+          height:30px;
+          margin:5px auto;
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $pad) {
+  .gdc-certificate{
+    &__title{
+      padding:20px 10px;
+      margin-left:-20px;
+      margin-right:-20px;
+    }
+    &__item{
+      &-text{
+        padding:0px;
+        &>h6{
+          padding:0;
+          margin:0;
+          margin-top:8px;
+        }
+        &>img{
+          height:30px;
+          margin:5px auto;
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .gdc-certificate{
+    &__title{
+      padding:20px 10px;
+    }
+    &__item{
+      &-type{
+        padding:20px 10px;
+      }
+    }
+  }
+}

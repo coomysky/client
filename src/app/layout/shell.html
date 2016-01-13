@@ -1,0 +1,16 @@
+<div ng-controller="ShellController as vm">
+  <!-- Navigation -->
+  <!-- <header ng-if="vm.isAuthenticated()" title="vm.appTitle"></header> -->
+  <!-- /.navbar-top-links -->
+
+  <!-- /.navbar-static-side -->
+  
+  <div ui-view></div>
+  
+  <div ngplus-overlay
+       ngplus-overlay-delay-in="50"
+       ngplus-overlay-delay-out="700"
+       ngplus-overlay-animation="dissolve-animation">
+       <img src="assets/images/loading.png"/>
+  </div>
+</div>

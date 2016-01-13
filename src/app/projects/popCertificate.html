@@ -1,0 +1,30 @@
+<div class="pop-slider">
+  <h3 ng-show = "datas.length ===0" class="text-center">目前暫無資料</h3>
+  <div ng-repeat="s in datas" ng-class="{'prev':'animated slideInRight','next':'animated slideInLeft','hide':'hide'}[isNext($index)]">
+
+    <div ng-show="s.type === 'application/pdf' ">
+      <object data="{{s.url}}" type="application/pdf" class="pop-certificate" >
+        <p class="pop-slider__pdf">
+          Your web browser doesn't have a PDF plugin.
+          Instead you can <a href="{{s.url}}">click here to
+          download the PDF file.</a>
+        </p>
+      </object>
+
+    </div>
+    <div ng-show="s.type !== 'application/pdf' ">
+      <img class="pop-slider__img"src="{{s.url}}" style="width:100%;">
+    </div>
+
+  </div>
+    <a class="pop-slider__icon -prev" ng-click="prev()" ng-show="datas.length>1"><i class="fa fa-chevron-left fa-2x"></i></a>
+    <a class="pop-slider__icon -next" ng-click="next()" ng-show="datas.length>1"><i class="fa fa-chevron-right fa-2x"></i></a>
+</div>
+
+<!--<div class="visible-xs visible-sm pop-slider__pdf">Your web browser doesn't have a PDF plugin.
+ <p> Instead you can click link to  download the PDF file.
+  </p>
+  <p ng-repeat="s in datas">
+    <a href="{{s.img}}">Download {{s.title}}</a>
+  </p>
+</div>-->

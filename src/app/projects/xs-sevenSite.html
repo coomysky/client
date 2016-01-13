@@ -1,0 +1,158 @@
+<div class="xs-sites-contain">
+   <table class="gdc-side-item">
+    <tr>
+      <td width='40%' valign='center' align="center" class="gdc-side-item__img">
+        <img src="assets/images/projects/pc/7stations-mine-icon.png" class="img-responsive"></img>
+        <p>礦源</p>
+      </td>
+      <td width='60%' valign='center' class="gdc-side-item__content">
+        <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+          <div ng-repeat = "house in vm.houseData.stations.aggregates">
+          {{house.name}}
+            <table class="gdc-side-item__content-table" >
+              <tr>
+                <td valign="center" class="gdc-side-item__content-checkdata">檢驗資料</td>
+                <td class="gdc-side-item__content-dates">
+                  <div ng-repeat="d in house.inspections">{{d.date |date:'yyyy/MM/dd'}}</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+        <!-- </div> -->
+      </td>
+    </tr>
+    <tr>
+      <td width='40%' valign='center' class="gdc-side-item__img">
+        <img src="assets/images/projects/pc/7stations-ship-icon.png" class="img-responsive"></img>
+        <p>裝船前</p>
+      </td>
+      <td width='60%' valign='center' class="gdc-side-item__content">
+        <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+          <div ng-repeat = "house in vm.houseData.stations.arrival_ports">
+          {{house.name}}
+            <table class="gdc-side-item__content-table">
+              <tr>
+                <td valign="center" class="gdc-side-item__content-checkdata">檢驗資料</td>
+                <td class="gdc-side-item__content-dates">
+                  <div ng-repeat="d in house.inspections">{{d.date |date:'yyyy/MM/dd'}}</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+        <!-- </div> -->
+      </td>
+    </tr>
+    <tr>
+      <td width='40%' valign='center' class="gdc-side-item__img">
+        <img src="assets/images/projects/pc/7stations-harbor-icon.png" class="img-responsive"></img>
+        <p>到港</p>
+      </td>
+      <td width='60%' valign='center' class="gdc-side-item__content">
+        <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+          <div ng-repeat = "house in vm.houseData.stations.departure_ports">
+          {{house.name}}
+            <table class="gdc-side-item__content-table">
+              <tr>
+                <td valign="center" class="gdc-side-item__content-checkdata">檢驗資料</td>
+                <td class="gdc-side-item__content-dates">
+                  <div ng-repeat="d in house.inspections">{{d.date |date:'yyyy/MM/dd'}}</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+        <!-- </div> -->
+      </td>
+    </tr>
+    <tr>
+      <td width='40%' valign='center' class="gdc-side-item__img">
+        <img src="assets/images/projects/pc/7stations-material-icon.png" class="img-responsive"></img>
+        <p>粒料進料</p>
+      </td>
+      <td width='60%' valign='center' class="gdc-side-item__content">
+        <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+          <div ng-repeat = "house in vm.houseData.stations.mines">
+            {{house.name}}
+            <table class="gdc-side-item__content-table">
+              <tr>
+                <td valign="center" class="gdc-side-item__content-checkdata">檢驗資料</td>
+                <td class="gdc-side-item__content-dates">
+                  <div ng-repeat="d in house.inspections">{{d.date |date:'yyyy/MM/dd'}}</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+        <!-- </div> -->
+      </td>
+    </tr>
+    <tr>
+      <td width='40%' valign='center' class="gdc-side-item__img">
+        <img src="assets/images/projects/pc/7stations-enter-icon.png" class="img-responsive"></img>
+        <p>砂石進場</p>
+      </td>
+      <td width='60%' valign='center' class="gdc-side-item__content">
+        <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+          <div ng-repeat = "house in vm.houseData.stations.project">
+            {{house.name}}
+            <table class="gdc-side-item__content-table">
+              <tr>
+                <td valign="center" class="gdc-side-item__content-checkdata">檢驗資料</td>
+                <td class="gdc-side-item__content-dates">
+                  <div ng-repeat="d in house.inspections">{{d.date |date:'yyyy/MM/dd'}}</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+        <!-- </div> -->
+      </td>
+    </tr>
+    <tr>
+      <td width='40%' valign='center' class="gdc-side-item__img">
+        <img src="assets/images/projects/pc/7stations-exit-icon.png" class="img-responsive"></img>
+        <p>混凝土出貨</p>
+      </td>
+      <td width='60%' valign='center' class="gdc-side-item__content">
+        <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+          <div ng-repeat = "house in vm.houseData.stations.purchase_orders">
+            {{house.name}}
+            <table class="gdc-side-item__content-table">
+              <tr>
+                <td valign="center" class="gdc-side-item__content-checkdata">檢驗資料</td>
+                <td class="gdc-side-item__content-dates">
+                  <div ng-repeat="d in house.inspections">{{d.date |date:'yyyy/MM/dd'}}</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+        <!-- </div> -->
+      </td>
+    </tr>
+    <tr>
+      <td width='40%' valign='center' class="gdc-side-item__img">
+        <img src="assets/images/projects/pc/7stations-site-icon.png" class="img-responsive"></img>
+        <p>工地現場</p>
+      </td>
+      <td width='60%' valign='center' class="gdc-side-item__content">
+        <!-- <div class="pull-right padding-bottom" style="max-width:150px;" > -->
+          <div ng-repeat = "house in vm.houseData.stations.sell_order">
+            {{house.name}}
+            <table class="gdc-side-item__content-table">
+              <tr>
+                <td valign="center" class="gdc-side-item__content-checkdata">檢驗資料</td>
+                <td class="gdc-side-item__content-dates">
+                  <div ng-repeat="d in house.inspections">{{d.date |date:'yyyy/MM/dd'}}</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+        <!-- </div> -->
+      </td>
+    </tr>
+  </table>
+<div>

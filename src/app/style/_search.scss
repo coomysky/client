@@ -1,0 +1,49 @@
+.gdc-search{
+  position: relative;
+  background: #fff;
+  padding:10px;
+  z-index: 10;
+  height: 200px;
+  &__close{
+    position: absolute;
+    bottom:0px;
+    cursor: pointer;
+    right: 5px;
+  }
+  &__selectbox{
+    height: 170px;
+    overflow-y: auto;
+  }
+  &__item{
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(126, 121, 113, 0.09);
+    margin-bottom: 5px;
+    position: relative;
+    height: 100px;
+    &-img{
+      position: absolute;
+      height: 80px;
+      width: 120px;
+      display: inline-block;
+      top:10px;
+      left:10px;
+    }
+    &-content{
+      position: absolute;
+      display: inline-block;
+      font-size: 20px;
+      top:10px;
+      left:140px;
+      padding:10px;
+      height: 80px;
+      border-left: 1px #fff solid;
+    }
+    &:hover{
+      background:rgba(126, 121, 113, 0.55);
+      color:#fff;
+    }
+
+  }
+
+}

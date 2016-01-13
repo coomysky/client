@@ -1,0 +1,24 @@
+.pop_house{
+  padding:0 20px;
+  &__title{
+    text-align: center;
+    border-bottom: 1px #000 dotted;
+    padding:10px;
+  }
+  &__list{
+    width: auto;
+    margin: 0 auto;
+    &>li>a{
+      display: inline-block;
+      cursor: pointer;
+      padding:10px;
+      text-align: center;
+      text-decoration:none;
+      &:hover{
+        border-radius: 5px;
+        background:#289303;
+        color:#fff;
+      }
+    }
+  }
+}

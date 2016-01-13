@@ -1,0 +1,308 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+.hide{
+  display: none;
+}
+body {
+  height: 100%;
+  background-color: #CCC9C6;
+  width:100%;
+  // background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
+  // background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+");
+  &.-home{
+    background:#fff;
+  }
+}
+
+.inline {
+  display: inline;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    opacity: 0.6;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+
+.padding{
+  &-none{
+    padding:0;
+  }
+  &-bottom{
+    padding-bottom:10px;
+  }
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nowrap {
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+div.project-info  {
+
+  img.project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  div.project-intro {
+    overflow: hidden;
+    background: rgba(16, 17, 19, 0.6);
+    position: relative;
+    color: white;
+    top: -70px;
+    @media screen and (min-width: 768px) {
+      height: 70px;
+      max-height: 70px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 120px;
+      max-height: 120px;
+    }
+
+
+    div.project-company {
+      border-right: thick solid white;
+      border-width: 1px;
+      height: inherit;
+    }
+
+    div.project-description {
+      font-size: 12px;
+      position: relative;
+      @media screen and (min-width: 768px) {
+        border-left: thick solid white;
+        border-width: 1px;
+      }
+      height: inherit;
+    }
+
+  }
+
+}
+
+.certificates {
+  position: relative;
+  top: -70px;
+
+  .buildings {
+    background-color: #e3ded8;
+    line-height: 40px;
+    color: #97877e;
+
+    .building {
+      background-color: #abd6b8;
+      color: #359561;
+      text-align: center;
+    }
+
+    .building:hover {
+      background-color: #359561;
+      color: white;
+    }
+
+    .active {
+      background-color: #359561;
+      color: white;
+    }
+  }
+
+  .certificate {
+    padding: 1em 1em;
+    width: 100%;
+    margin-left: 0.5em;
+
+    .logo {
+      background-color: #359561;
+      width: 127%;
+      padding: 1em;
+    }
+
+    .certificate-station {
+      padding: 15px;
+      background-color: #f08001;
+      color: white;
+      text-align: center;
+    }
+
+    .building-certificate {
+      color: #f08001;
+      text-align: center;
+      border: 1px;
+      border-color: #f08001;
+      border-style: solid;
+      width: 50%;
+    }
+  }
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.editable {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  background-color: white;
+  background-color: -moz-field;
+  border: 1px solid darkgray;
+  box-shadow: 1px 1px 1px 0 lightgra inset;
+  font: -moz-field;
+  font: -webkit-small-control;
+  padding: 2px 3px;
+  width: 100%;
+  height: 25px;
+  margin: 8px auto;
+}
+
+.stations {
+  background-color: #e3ded8;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.station {
+  margin: 1em 0;
+  width: 100%;
+  height: auto;
+  color: #97877e;
+
+  .station-icon {
+    width: 100%;
+  }
+
+  .station-name {
+    color: inherit;
+    text-align: center;
+  }
+
+  .station-inspection-time {
+    color: inherit;
+  }
+
+  .inspection-result {
+    width: 85%;
+    height: 85%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+  .container{
+    width:90%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container{
+    width:80%;
+  }
+}
+
+
+footer {
+  color: rgb(178, 178, 178);
+  background-color: rgba(227, 222, 216, 0.17);
+  text-align: center;
+  position:relative;
+  bottom:0;
+  width:100%;
+  padding:20px;
+  position: relative;
+  &>ul{
+    margin: 0;
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    border-top: 1px rgba(107, 107, 107, 0.98) solid;
+    width: 100%;
+    height:20px;
+    margin: 10px 0;
+    background-image: -webkit-radial-gradient(50% 0%, 50% 1em, rgba(131, 130, 130, 0.35), rgba(255, 255, 255, 0));
+    background-image: -moz-radial-gradient(50% 0%, 50% 1em,rgba(131, 130, 130, 0.35),rgba(255, 255, 255, 0));
+    background-repeat: repeat-y;
+    padding: 2px;
+
+  }
+  &.-home{
+    background:#F0ECE6;
+    color:#5a5a5a;
+    &:after{
+      border-color:#dfdfdf;
+    }
+  }
+}
+.pop-slider{
+  width:100%;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  min-height: 500px;
+  &__pdf{
+    padding:20px;
+    margin:30px 0;
+  }
+  &__icon{
+    position: absolute;
+    top:45%;
+    padding: 10px;
+    background: rgba(40, 40, 40, 0.25);
+    color:#fff;
+    opacity:0.5;
+    cursor: pointer;
+    &:hover{
+      color:#fff;
+      opacity:1;
+    }
+    &.-next{
+      right:-10px;
+    }
+    &.-prev{
+      left:-10px;
+    }
+  }
+}

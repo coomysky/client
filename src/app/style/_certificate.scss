@@ -1,0 +1,22 @@
+.gdc-certificate{
+  margin-top:10px;
+  &__box{
+    border:10px #fff solid;
+    height:500px;
+    background:#F7FAD9;
+    margin:0 5px 5px 0;
+
+  }
+  &__btn{
+    &-main{
+      background:#000;
+    }
+
+  }
+}
+.pop-certificate{
+  width: 100%;
+  height: 520px;
+  min-height: 500px;
+}
+

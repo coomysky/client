@@ -1,0 +1,7 @@
+<div class="pop_house">
+  <h4 class="pop_house__title">選擇樓層</h4>
+  <p>目前顯示資料樓層：{{floor}}</p>
+  <ul class="list-inline pop_house__list">
+    <li ng-repeat="s in datas" ><a ng-click="getHouse($index)">{{s.floor_name}}</a></li>
+  </ul>
+</div>

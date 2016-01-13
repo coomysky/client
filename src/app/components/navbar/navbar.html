@@ -1,0 +1,31 @@
+<nav class="gdc-navbar hidden-xs hidden-sm">
+  <div class="container gdc-navbar__body">
+    <div class="row">
+      <div class="col-lg-9 col-md-8">
+      <div class="gdc-header__logo"  >
+        <a ui-sref = "home">
+          <img src="assets/images/header-icon.svg" class="gdc-header__logo-svg" data-fallback="favicon.ico" &nbsp; />
+        </a>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-4 gdc-navbar__title" >
+        <img src="assets/images/projects/pc/7stations-title.png" class="img-responsive"/>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar-fixed-top visible-sm visible-xs" ng-controller = "NavbarCtrl" >
+  <div class="container gdc-navbar__body">
+    <div class="row">
+      <div class="col-xs-10">
+        <div class="gdc-header__logo" ng-click="home()">
+          <a ui-sref = "home">
+            <img src="assets/images/header-icon.svg" class="gdc-header__logo-svg" data-fallback="favicon.ico" &nbsp; />
+          </a>
+        </div>
+      </div>
+    </div>
+    <a class="xs-change-house visible-xs visible-sm" ng-click="sendOpenHouseEven()" ng-show="getShowHouseBtnEven"><i class="fa fa-list"></i></a>
+  </div>
+</nav>

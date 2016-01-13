@@ -1,0 +1,256 @@
+  <div ng-include="'app/components/header/header.html'"></div>
+<div class="container ">
+
+  <div class="row gdc-side">
+
+    <div class="col-md-9 col-sm-12 padding-none" >
+      <div class="gdc-slider" style="background-image:url('assets/images/projects/pc/site-photo-default.png');">
+        <div class="gdc-slider__content" ng-click="vm.open()">
+          <div class="gdc-slider__logo col-md-4 col-sm-12" >廣宇晴朗案
+            <img src="assets/images/projects/mobile/arrow-down.png" width="50" class="gdc-slider__menu-icon visible-xs visible-sm" ng-show="vm.dropOpen"/>
+            <img src="assets/images/projects/mobile/arrow-up.png" width="50" class="gdc-slider__menu-icon visible-xs visible-sm" ng-show="!vm.dropOpen"/>
+
+          </div>
+          <div class="gdc-slider__text col-md-8" ng-hide="!vm.dropOpen">永和珍稀小坪數，跟爸媽住近一點！由專精打造幸福建築的廣宇建設重金禮聘大陸工程責任施工，加上瑞士SGS 集團全工程國際等級的七大檢驗品質專業把關，完美呈現《廣宇晴朗》。攜手台灣名宅界頂級團隊–築內國際，從裡到外完整規劃公設空間，期許給您最細緻的生活體驗；享受大安區的優質生活，只需負擔大安區的一半價錢。住過永和的人才會知道永和的好！</div>
+        </div>
+      </div>
+      <div class="gdc-main">
+        <!-- <div class="gdc-main__row -slider-text -content visible-xs">基地面積： 466坪 銷售坪數： 42~54坪 公設比： 32% 銷售總戶數： 70戶 樓層： 地上 12 層、地下 3 層 已銷售戶數： 	每坪單價： 最低 22 萬元</div> -->
+        <!-- <div class="gdc-main__row">
+          <div class="gdc-main__header">
+            請選擇棟別查看相關品質保證證書
+            <ul class="list-inline gdc-main__tabs hidden-xs hidden-sm">
+              <li role="presentation" class="active"><a href="#">A 棟</a></li>
+              <li role="presentation"><a href="#">B 棟</a></li>
+              <li role="presentation"><a href="#">C 棟</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="gdc-main__row">
+          <ul class="list-inline gdc-main__tabs hidden-md hidden-lg">
+            <li role="presentation" class="active"><a href="#">A 棟</a></li>
+            <li role="presentation"><a href="#">B 棟</a></li>
+            <li role="presentation"><a href="#">C 棟</a></li>
+          </ul>
+        </div> -->
+        <div class="gdc-main__row -tabs-content -content hidden-xs hidden-sm">
+          <div class="row gdc-certificate">
+            <div class="col-md-4">
+              <div class="gdc-certificate__title">
+                <img src="assets/images/projects/pc/certificates-title.png" class="img-responsive hidden-xs hidden-sm"/>
+              </div>
+            </div>
+            <div class="col-md-8 ">
+
+              <div class="col-md-6">
+              <a ng-click="vm.openCertificate()">
+                <div class="gdc-certificate__item row">
+                  <div class="gdc-certificate__item-type col-md-6 text-center" >
+                    <img src="assets/images/projects/pc/certificate-harbor-icon.png" class="img-responsive"/>
+                    <h6 class="gdc-certificate__item-title">到港</h6>
+                  </div>
+                  <div class="gdc-certificate__item-text col-md-6 text-center">
+                    <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                    <h6>品質保證證書</h6>
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="col-md-6 ">
+                <a ng-click="vm.openCertificate()">
+                  <div class="gdc-certificate__item row">
+                    <div class="gdc-certificate__item-type col-md-6 text-center">
+                      <img src="assets/images/projects/pc/certificate-site-icon.png" class="img-responsive"/>
+                      <h6 class="gdc-certificate__item-title">現場抽驗</h6>
+                    </div>
+                    <div class="gdc-certificate__item-text col-md-6 text-center">
+                      <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                      <h6>品質保證證書</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-xs visible-sm xs-certificate__row">
+
+          <table class="xs-certificate">
+            <tr>
+              <td width="40%" valign="center" align="right"class="xs-certificate__title">
+                <img src="assets/images/projects/mobile/certificates-title.png" class="img-responsive"/>
+              </td>
+              <td width="60%" valign="center" class="xs-certificate__items">
+                <a ng-click="vm.openCertificate()">
+                  <div class="row xs-certificate__item">
+                    <div class="xs-certificate__item-type col-xs-5 text-center">
+                      <img src="assets/images/projects/pc/certificate-harbor-icon.png" class="img-responsive"/>
+                      <h6 class="gdc-certificate__item-title">到港</h6>
+                    </div>
+                    <div class="xs-certificate__item-text col-xs-7 text-center">
+                      <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                      <h6>品質保證證書</h6>
+                    </div>
+                  </div>
+                </a>
+                <a ng-click="vm.openCertificate()"><div class="row xs-certificate__item">
+                  <div class="xs-certificate__item-type col-xs-5 text-center">
+                    <img src="assets/images/projects/pc/certificate-site-icon.png" class="img-responsive"/>
+                    <h6 class="gdc-certificate__item-title">現場抽驗</h6>
+                  </div>
+                  <div class="xs-certificate__item-text col-xs-7 text-center">
+                    <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                    <h6>品質保證證書</h6>
+                  </div>
+                </div>
+              </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-12" >
+      <div class="gdc-side-xs__header visible-xs visible-sm">
+        <img src="assets/images/projects/pc/7stations-title.png"  class="img-responsive">
+      </div>
+      <div class="gdc-side-lists">
+        <table class="gdc-side-item">
+          <tr>
+            <td width='40%' valign='center' align="center" class="gdc-side-item__img">
+              <img src="assets/images/projects/pc/7stations-mine-icon.png" class="img-responsive"></img>
+              <p>礦源</p>
+            </td>
+            <td width='60%' valign='center' class="gdc-side-item__content">
+              <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+                <p>
+                牛頭山礦場<br>
+                檢驗資料: 2015/09/08
+                </p>
+                <p>
+                廈門礦場<br>
+                檢驗資料: 2015/09/09
+                </p>
+                <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+              <!-- </div> -->
+            </td>
+          </tr>
+          <tr>
+            <td width='40%' valign='center' class="gdc-side-item__img">
+              <img src="assets/images/projects/pc/7stations-ship-icon.png" class="img-responsive"></img>
+              <p>裝船前</p>
+            </td>
+            <td width='60%' valign='center' class="gdc-side-item__content">
+              <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+                <p>
+                牛頭山港口<br>
+                檢驗資料: 2015/09/09
+                </p>
+                <p>
+                廈門港口<br>
+                檢驗資料: 2015/09/10
+                </p>
+                <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+              <!-- </div> -->
+            </td>
+          </tr>
+          <tr>
+            <td width='40%' valign='center' class="gdc-side-item__img">
+              <img src="assets/images/projects/pc/7stations-harbor-icon.png" class="img-responsive"></img>
+              <p>到港</p>
+            </td>
+            <td width='60%' valign='center' class="gdc-side-item__content">
+              <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+                <p>
+                台北港<br>
+                檢驗資料: 2015/09/10
+                </p>
+                <p>
+                台北港<br>
+                檢驗資料: 2015/09/11
+                </p>
+                <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+              <!-- </div> -->
+            </td>
+          </tr>
+          <tr>
+            <td width='40%' valign='center' class="gdc-side-item__img">
+              <img src="assets/images/projects/pc/7stations-material-icon.png" class="img-responsive"></img>
+              <p>粒料進料</p>
+            </td>
+            <td width='60%' valign='center' class="gdc-side-item__content">
+              <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+                <p>
+                台北港堆場<br>
+                檢驗資料: 2015/09/10
+                </p>
+                <p>
+                台北港堆場<br>
+                檢驗資料: 2015/09/11
+                </p>
+                <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+              <!-- </div> -->
+            </td>
+          </tr>
+          <tr>
+            <td width='40%' valign='center' class="gdc-side-item__img">
+              <img src="assets/images/projects/pc/7stations-enter-icon.png" class="img-responsive"></img>
+              <p>砂石進場</p>
+            </td>
+            <td width='60%' valign='center' class="gdc-side-item__content">
+              <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+                <p>
+                土城國產<br>
+                檢驗資料: 2015/09/12
+                </p>
+                <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+              <!-- </div> -->
+            </td>
+          </tr>
+          <tr>
+            <td width='40%' valign='center' class="gdc-side-item__img">
+              <img src="assets/images/projects/pc/7stations-exit-icon.png" class="img-responsive"></img>
+              <p>混擬土出貨</p>
+            </td>
+            <td width='60%' valign='center' class="gdc-side-item__content">
+              <!-- <div class="pull-right padding-bottom" style="max-width:150px;"> -->
+                <p>
+                土城國產<br>
+                檢驗資料: 2015/09/13
+                </p>
+                <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+              <!-- </div> -->
+            </td>
+          </tr>
+          <tr>
+            <td width='40%' valign='center' class="gdc-side-item__img">
+              <img src="assets/images/projects/pc/7stations-site-icon.png" class="img-responsive"></img>
+              <p>工地現場</p>
+            </td>
+            <td width='60%' valign='center' class="gdc-side-item__content">
+              <!-- <div class="pull-right padding-bottom" style="max-width:150px;" > -->
+                <p>
+                檢驗資料: 2015/09/13
+                </p>
+                <img src="assets/images/projects/pc/7stations-pass-icon.png" class="img-responsive"></img>
+              <!-- </div> -->
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <footer>
+        Copyright&copy; 2015 Goldsun co. Ltd. All right reserved.
+        <p>
+          免費服務電話：0800-353-500<br>
+          服務信箱: service@gdc.com.tw
+        </p>
+    </footer>
+
+  </div>
+</div>

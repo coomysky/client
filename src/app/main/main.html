@@ -1,0 +1,48 @@
+
+<div ng-include="'app/components/navbar/navbar-default.html'"></div>
+<div class="container gdc-main-body " ng-class="{'fadeIn':'animated fadeIn','hide':'hide'}[vm.fadeInHouse]">
+  <div class="row gdc-side">
+    <div class="gdc-slider">
+      <div class="gdc-slider__body "  style="background:url('assets/images/projects/mobile/home-banner.png')no-repeat;background-position:center;background-size:cover"  >
+        <div class="gdc-slider__search animated bounceInRight visible-md visible-lg">
+          <div class="col-md-4  padding-none" >
+            <div class="gdc-slider__search--header">國產建安宅建案查詢</div>
+          </div>
+          <div class="col-md-8 gdc-slider__search--form ">
+            <div class="gdc-slider__input-group">
+              <input type="text" class="gdc-slider__input-group--input" placeholder="請輸入建案關鍵字"  ng-model="vm.searchData" ng-keydown="vm.search()">
+              <a class="gdc-slider__input-group--btn" type="button" ng-click="vm.search()" ><i class="fa fa-search"></i></a>
+            </div>
+            <div gdc-search projects="vm.projects" on-close="vm.closeSearch()" item-click="vm.go()">{{vm.projects}}</div>
+          </div>
+        </div>
+        <div class="gdc-slider__xs-search animated bounceInRight visible-sm visible-xs col-sm-12">
+          <div class="gdc-slider__xs-search--header">國產建安宅建案查詢</div>
+          <div class="gdc-slider__xs-search--form">
+            <div class="gdc-slider__input-group">
+              <input type="text" class="gdc-slider__input-group--input" placeholder="請輸入建案關鍵字" ng-model="vm.searchData" ng-keydown="vm.search()" >
+              <a class="gdc-slider__input-group--btn" type="button" ng-click="vm.search()"><i class="fa fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-12 gdc-home__ad">
+      <h4>Standards of Excellence <small>優質標準</small></h4>
+      <img src="assets/images/projects/home-inspection.png" class="img-responsive">
+    </div>
+    <div class="col-md-8 col-sm-12 gdc-home__slider">
+      <h4>Outstanding Performance <small>精選建案</small></h4>
+      <slick class="slider" settings="vm.slickConfig" ng-if="vm.slickConfigLoaded">
+        <div ng-repeat="i in vm.recommends  track by $index">
+          <div class="gdc-home__slider-item" ng-click="vm.go({id:i.uuid,name:i.name})" style="background:url('{{vm.projectImage(i)}}')no-repeat; background-size:cover; background-position:center;">
+            <div class="gdc-home__slider-item--des">{{i.name}}</div>
+          </div>
+        </div>
+      </slick>
+    </div>
+  </div>
+  <div ng-include="'app/components/footer.html'"></div>
+</div>

@@ -1,0 +1,24 @@
+.xs-sites{
+  width:100%;
+  position: relative;
+  background: rgba(129, 113, 103, 0.32);
+  &-contain{
+    width:90%;
+    margin-left: 10%;
+    padding: 20px 0 10px 5px;
+  }
+  &:before{
+    content: '';
+    display: block;
+    width: 90%;
+    position: absolute;
+    -webkit-box-shadow: -8px -1px 11px -3px rgba(0,0,0,0.1);
+    -moz-box-shadow: -8px -1px 11px -3px rgba(0,0,0,0.1);
+    box-shadow: -8px -1px 11px -3px rgba(0,0,0,0.1);
+    background: #E3DED8;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}

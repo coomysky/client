@@ -1,0 +1,11 @@
+<div class="gdc-search" ng-show="projects.length>0">
+  <a class="gdc-search__close" ng-click="close()"><i class="fa fa-times"></i></a>
+  <div class="gdc-search__selectbox">
+   <a ng-repeat="p in projects track by $index" ui-sref="projects.show({id:p.uuid,name:p.name})">
+     <div class="gdc-search__item">
+        <div class="gdc-search__item-img" style="background:url('http://traceability.gdc.com.tw/backend{{p.project_images[0]}}')no-repeat;background-size:cover;background-position:center;"></div>
+        <div class="gdc-search__item-content">{{p.name}}</div>
+     </div>
+    </a>
+  </div>
+</div>

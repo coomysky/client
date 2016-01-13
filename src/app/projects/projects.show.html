@@ -1,0 +1,116 @@
+
+<div class="row gdc-side">
+  <div class="col-lg-10 col-md-9 col-sm-12 padding-none" >
+    <div class="gdc-slider">
+      <div class="btn-group gdc-chane-house hidden-xs hidden-sm" ng-show="vm.project.project_floors.length >1" title="看別層資訊">
+        <button type="button" class="gdc-chane-house__btn" ng-click="vm.openHouse()">
+          <i class="fa fa-list"></i>
+        </button>
+      </div>
+      <div ng-repeat="slide in vm.sliders"class="gdc-slider__body" ng-class="{ 'prev':'animated slideInRight','next':'animated slideInLeft','hide':'hide'}[vm.isNext($index)]" ng-hide="!vm.isCurrentSlideIndex($index)" style="background:url('{{vm.config.assetsUrl}}{{slide}}')no-repeat;background-position:center;background-size:auto 100%;"  >
+      </div>
+      <div ng-click="vm.open()" class="gdc-slider__content">
+        <div class="gdc-slider__logo col-md-5 col-sm-12" >{{vm.project.name}}
+          <img src="assets/images/projects/mobile/arrow-down.png" width="50" class="gdc-slider__menu-icon visible-xs visible-sm" ng-show="vm.dropOpen"/>
+          <img src="assets/images/projects/mobile/arrow-up.png" width="50" class="gdc-slider__menu-icon visible-xs visible-sm" ng-show="!vm.dropOpen"/>
+        </div>
+        <div class="gdc-slider__text col-md-7" ng-hide="!vm.dropOpen">{{vm.project.description}} </div>
+      </div>
+      <a class="gdc-slider__icon -prev" ng-click="vm.prevSlide()"><i class="fa fa-chevron-left fa-2x"></i></a>
+      <a class="gdc-slider__icon -next"ng-click="vm.nextSlide()"><i class="fa fa-chevron-right fa-2x"></i></a>
+    </div>
+
+    <div class="gdc-main">
+      <div class="gdc-main__row -tabs-content -content hidden-xs hidden-sm">
+        <div class="row gdc-certificate ">
+          <div class="col-md-4">
+            <div class="gdc-certificate__title animated flipInX">
+              <img src="assets/images/projects/pc/certificates-title.png" class="img-responsive hidden-xs hidden-sm"/>
+            </div>
+          </div>
+          <div class="col-md-8 ">
+
+            <div class="col-md-6">
+            <a ng-click="vm.openCertificate(vm.portCertificate)">
+              <div class="gdc-certificate__item row animated flipInX">
+                <div class="gdc-certificate__item-type col-md-6 text-center" >
+                  <img src="assets/images/projects/pc/certificate-harbor-icon.png" class="img-responsive"/>
+                  <h6 class="gdc-certificate__item-title">到港</h6>
+                </div>
+                <div class="gdc-certificate__item-text col-md-6 text-center">
+                  <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                  <h6>品質保證證書 </h6>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-md-6 ">
+              <a ng-click="vm.openCertificate(vm.siteCertificate)">
+                <div class="gdc-certificate__item row animated flipInX">
+                  <div class="gdc-certificate__item-type col-md-6 text-center">
+                    <img src="assets/images/projects/pc/certificate-site-icon.png" class="img-responsive"/>
+                    <h6 class="gdc-certificate__item-title">現場抽驗</h6>
+                  </div>
+                  <div class="gdc-certificate__item-text col-md-6 text-center">
+                    <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                    <h6>品質保證證書</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="visible-xs visible-sm xs-certificate__row">
+
+        <table class="xs-certificate">
+          <tr>
+            <td width="35%" valign="center" align="right">
+              <div class="xs-certificate__title">
+                <img src="assets/images/projects/mobile/certificates-title.png" class="img-responsive"/>
+              </div>
+            </td>
+            <td width="65%" valign="center" class="xs-certificate__items">
+              <a ng-click="vm.openCertificate(vm.portCertificate)">
+                <div class="row xs-certificate__item">
+                  <div class="xs-certificate__item-type col-xs-5 text-center">
+                    <img src="assets/images/projects/pc/certificate-harbor-icon.png" class="img-responsive"/>
+                    <h6 class="gdc-certificate__item-title">到港</h6>
+                  </div>
+                  <div class="xs-certificate__item-text col-xs-7 text-center">
+                    <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                    <h6>品質保證證書</h6>
+                  </div>
+                </div>
+              </a>
+              <a ng-click="vm.openCertificate(vm.siteCertificate)"><div class="row xs-certificate__item">
+                <div class="xs-certificate__item-type col-xs-5 text-center">
+                  <img src="assets/images/projects/pc/certificate-site-icon.png" class="img-responsive"/>
+                  <h6 class="gdc-certificate__item-title">現場抽驗</h6>
+                </div>
+                <div class="xs-certificate__item-text col-xs-7 text-center">
+                  <img src="assets/images/projects/pc/certificates-look-icon.png" class="img-responsive"/>
+                  <h6>品質保證證書</h6>
+                </div>
+              </div>
+            </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-2 col-md-3 hidden-xs hidden-sm" >
+    <div ng-include="'app/projects/sevenSite.html'" class="hidden-xs hidden-sm"></div>
+  </div>
+
+  <div class="col-sm-12 visible-xs visible-sm xs-sites" >
+    <div class="gdc-side-xs__header">
+      <img src="assets/images/projects/pc/7stations-title.png"  class="img-responsive">
+    </div>
+    <div ng-include="'app/projects/xs-sevenSite.html'" ></div>
+  </div>
+
+</div>

@@ -1,0 +1,119 @@
+.gdc-header{
+  background:#fff;
+  &__logo{
+    height:50px;
+    position:relative !important;
+    & img{
+      position:absolute;
+      top:0px;
+      left:10px;
+    }
+    &-text{
+      position:absolute;
+      top:8px;
+      left:75px;
+      font-weight:bolder;
+      transform:scaleX(1.2);
+    }
+    &-svg{
+      max-height:50px;
+      max-width:250px;
+      margin-left:-15px;
+    }
+  }
+  &__search{
+    background:#9e9690;
+    padding:10px;
+    height:50px;
+    position:relative;
+    z-index:1;
+    &-edit{
+      background:#fff;
+      height:30px;
+      width:100%;
+    }
+    &-icon{
+      width: 20px;
+      color: #97877e;
+      position:absolute;
+      right:10px;
+      top:20px;
+    }
+    &.-hide-title{
+      &:after,&:before{
+        display:none;
+      }
+    }
+    &.-show-certificate{
+      &:after{
+        background:#209656;
+      }
+      &:before{
+      }
+    }
+    &:after{
+      content:'';
+      display:block;
+      background:#e5762c;
+      height:50px;
+      padding:10px;
+      margin-left:-10px;
+      margin-right:-10px;
+      margin-top:10px;
+      z-index:3;
+
+    }
+    &:before{
+      content:'';
+      display:block;
+      height:45px;
+      position:absolute;
+      top:50px;
+      width:100%;
+      left:0;
+      background:url('../assets/images/projects/pc/7stations-title.png') no-repeat;
+      background-size:80%;
+      background-position:center;
+      z-index:4;
+
+    }
+  }
+
+}
+
+@media screen and (max-width: $mobile) {
+  .gdc-header{
+    &__logo{
+      & img{
+        left:0px;
+        top:5px;
+      }
+      &-text{
+        left:50px;
+        top:8px;
+        font-size:13px;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 980px) {
+  .gdc-header{
+    &__logo{
+      & img{
+        left:0;
+      }
+    }
+    &__search{
+      &:after, &:before{
+        display:none;
+      }
+      &.-show-certificate{
+        &:after, &:before{
+          display:block;
+        }
+      }
+    }
+  }
+
+}

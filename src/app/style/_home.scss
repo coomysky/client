@@ -1,0 +1,75 @@
+.gdc-home{
+  &__ad{
+    background:#e3e0db;
+    height:200px;
+    padding:15px 20px 40px 60px;
+    color:#948A80;
+    &>h4>small{
+      color:#948A80;
+      font-size:12px;
+    }
+    &>img{
+      height:110px;
+    }
+  }
+  &__slider{
+    background:#7E7971;
+    height:200px;
+    padding:15px 40px 40px 40px;
+    margin-bottom:20px;
+    color:#fff;
+    &>h4>small{
+      color:#fff;
+      font-size:12px;
+    }
+  }
+  &__slider-item{
+    background:#fff;
+    height:110px;
+    margin-right:5px;
+    position:relative;
+    cursor:pointer;
+    max-width:265px;
+    &--des{
+      height:40px;
+      background:url('../assets/images/projects/home-outstanding-shadow.png');
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      padding:20px 5px 5px 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gdc-home{
+    &__ad{
+      height:auto;
+      padding:15px 40px 40px 40px;
+      &>img{
+        height:auto;
+      }
+    }
+
+  }
+}
+.slick-prev{
+  left:-30px;
+}
+.slick-next{
+  right:-30px;
+}
+.slick-prev, .slick-next{
+  width:30px;
+  height:30px;
+
+}
+.slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 30px; opacity:0.3;}
+
+.slick-prev:before { content: "\f053"; }
+[dir="rtl"] .slick-prev:before { content: "\f054"; }
+
+[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+.slick-next:before { content: "\f054"; }
+[dir="rtl"] .slick-next:before { content: "\f053"; }
