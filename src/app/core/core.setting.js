@@ -17,9 +17,9 @@
       dateFormat: 'yyyy/MM/dd hh:mm',
       assetsUrl: '//traceability.gdc.com.tw/resources',
       domain: '',
-      // apiUrl: '//traceability.gdc.com.tw/backend',
+      apiUrl: '//traceability.gdc.com.tw/backend',
       // objUrl: '//traceability.gdc.com.tw/backend'
-      apiUrl: '',
+      // apiUrl: '',
       objUrl: '//traceability.gdc.com.tw/backend'
     });
 }());
