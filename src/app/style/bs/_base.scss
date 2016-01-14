@@ -1,6 +1,8 @@
-
+@import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 body{
   font-family: $font-title;
+  background: url('../assets/images/bg.png');
 }
 
 .bs-home{
@@ -8,8 +10,58 @@ body{
     padding:100px 10px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
+    // font-family: 'Tangerine', cursive;
+    font-weight: 700;
+
   }
 
+  &__logo{
+    width:200px;
+    height:200px;
+    background:rgba(#059f8d, 0.29);
+    border-radius: 100%;
+    margin: 20px auto 50px auto;
+    position: relative;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width:0;
+      height:0;
+      border-style: solid;
+      border-width: 40px 20px 0 20px;
+      border-color: rgba(#059f8d, 0.29) transparent transparent transparent;
+      left: 80px;
+      bottom: -38px;
+    }
+    &--content{
+      width: 180px;
+      height: 180px;
+      border-radius: 100%;
+      background: rgb(255, 236, 201);
+      position: absolute;
+      top:10px;
+      left: 10px;
+      overflow: hidden;
+      background-image: url('../assets/images/logo3.svg');
+      background-repeat: no-repeat;
+      background-position: -120px 10px;
+      background-size: 320px 250px;
+
+    }
+    &--shadow{
+      width:150px;
+      height: 40px;
+      border-radius: 100%;
+      background: rgba(150, 150, 150, 0.24);
+      margin:0px auto;
+
+      background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.24) 0%, rgba(0,0,0,0) 80%); /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 80%); /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0.24) 0%,rgba(0,0,0,0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0.8 ); /* IE6-9 fallback on horizontal gradient */
 
 
+    }
+  }
 }
