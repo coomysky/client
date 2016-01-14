@@ -16,6 +16,15 @@ body{
 
   }
 
+  &__logo-container{
+    &:hover{
+      cursor: pointer;
+      &>.infinite{
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+      }
+    }
+  }
   &__logo{
     width:200px;
     height:200px;
@@ -23,6 +32,8 @@ body{
     border-radius: 100%;
     margin: 20px auto 50px auto;
     position: relative;
+
+
     &:after{
       content: '';
       display: block;
@@ -63,5 +74,6 @@ body{
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0.8 ); /* IE6-9 fallback on horizontal gradient */
 
     }
+
   }
 }

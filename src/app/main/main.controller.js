@@ -7,7 +7,14 @@
 
   // MainController.$inject = ['config', 'logger'];
   /* @ngInject */
-  function MainController(config, logger, $state) {
+  function MainController(config, logger, $state, $rootScope, $timeout) {
+    var vm = this;
+    vm.fininshLandingAnimate = false;
+
+    $timeout(function() {
+      vm.fininshLandingAnimate = true;
+    }, 2000);
+
 
 
   }

@@ -19,6 +19,10 @@
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
   }
+  &.stop{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
 }
 
 .shadow{
@@ -39,61 +43,61 @@
 
 @-webkit-keyframes afterShadow {
   0% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-  50%{
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  100% {
+  50%{
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes afterShadow {
   0% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-  50%{
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  100% {
+  50%{
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @-webkit-keyframes afterBounceInDown {
   0% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
-  }
-  50%{
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  100% {
+  50%{
     -webkit-transform: translate3d(0, 10px, 0);
     transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes afterBounceInDown {
   0% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
-  }
-  50%{
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  100% {
+  50%{
     -webkit-transform: translate3d(0, 10px, 0);
     transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 

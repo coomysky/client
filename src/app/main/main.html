@@ -1,10 +1,12 @@
 <div class="container-fluid bs-home__container">
   <h1 class="bs-home__title animated flipInX">Bridal Shops</h1>
-  <div class="bs-home__logo animated afterBounceInDown infinite">
-    <div class="bs-home__logo--content "></div>
+  <div class="bs-home__logo-container">
+    <div class="bs-home__logo animated" ng-class="{true:'afterBounceInDown infinite',false:'bounceInDown'}[vm.fininshLandingAnimate]">
+      <div class="bs-home__logo--content"></div>
+    </div>
+    <div class="bs-home__logo--shadow animated " ng-class="{true:'afterShadow infinite',false:'shadow'}[vm.fininshLandingAnimate]"></div>
+    <div class="animated fadeIn">
   </div>
-  <div class="bs-home__logo--shadow animated afterShadow infinite"></div>
-  <div class="animated fadeIn">
     <h3 >Find a wedding dress. <br> In seconds.</h3>
     <p>As Low As <b>$99</b></p>
   </div>
