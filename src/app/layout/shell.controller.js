@@ -15,7 +15,7 @@
     activate();
 
     function activate() {
-      logger.success(' Welocom ' + config.appTitle, null);
+      logger.info(' Welocom ' + config.appTitle, null);
       // hideSplash();
     }
 
