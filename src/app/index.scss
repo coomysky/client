@@ -3,9 +3,10 @@
  *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
  */
 
-
+@import url(https://www.google.com/fonts#ChoosePlace:select/Collection:Dancing+Script:400,700|Tangerine:400,700);
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
 
 /**
  *  Do not remove this comments bellow. It's the markers used by wiredep to inject
@@ -14,19 +15,9 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 // bower:scss
 // endbower
 
-@import 'style/base';
-@import 'style/setting';
-@import 'style/mixin';
-@import 'style/header';
-@import 'style/slide';
-@import 'style/main';
-@import 'style/xs-certificate';
-@import 'style/certificate';
-@import 'style/navbar';
-@import 'style/pop';
-@import 'style/xs-sites';
-@import 'style/home';
-@import 'style/search';
+@import 'style/bs/setting';
+@import 'style/bs/base';
+
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject

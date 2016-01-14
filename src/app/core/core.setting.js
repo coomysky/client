@@ -4,7 +4,7 @@
   angular.module('app.core')
     .constant('config', {
       appErrorPrefix: '[GDC Error] ',
-      appTitle: '國產安心建材履歷',
+      appTitle: 'Bridal Shops',
       locale: 'en_US',
       support: {
         email: 'servermis@zooti.com',
@@ -17,7 +17,7 @@
       dateFormat: 'yyyy/MM/dd hh:mm',
       assetsUrl: '//traceability.gdc.com.tw/resources',
       domain: '',
-      apiUrl: '//traceability.gdc.com.tw/backend',
+      apiUrl: '//www.bridalshops.com/mbl/formland/001/a/',
       // objUrl: '//traceability.gdc.com.tw/backend'
       // apiUrl: '',
       objUrl: '//traceability.gdc.com.tw/backend'

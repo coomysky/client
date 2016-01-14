@@ -15,7 +15,7 @@
     activate();
 
     function activate() {
-      logger.success(' 歡迎使用 ' + config.appTitle, null);
+      logger.success(' Welocom ' + config.appTitle, null);
       // hideSplash();
     }
 
